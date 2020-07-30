@@ -5,9 +5,15 @@ Existuje niekoľko typov constraintov ktoré je možné použiť:
 - Relative positioning
 - Margins
 - Centering positioning
+  - Bias
 - Circular positioning
 - Visibility behavior
 - Dimension constraints
+  - minWidth
+  - ratio
 - Chains
-- Virtual Helpers objects
-- Optimizer
+  - spread
+  - spreadInside
+  - weighted
+  - packed
+  - packed with bias
