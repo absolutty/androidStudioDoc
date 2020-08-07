@@ -7,4 +7,5 @@ do ostatných okien. Tieto dve metódy bývajú vždy implementované:
 - **onCreate(Bundle)**: väčšinou obsahuje *setContentView(int)* s layoutom ktorý definuje UI a metódy
 *findViewById(id)* ktoré nájdu widgety v tom danom UI a umožňujú programovú interakciu s nimi. 
 - **onPause()**: tu sú definované úkony počas pozastavanie aktivity. Hocijaké zmeny spravené používateľom
-by maôo byť zachované (väčšinou pomocou ContentProvider-a)
+by maôo byť zachované (väčšinou pomocou ContentProvider-a). <br>
+*Detailnejší opis aktivity life-cycle sa nachádza* [TU](https://github.com/absolutty/androidStudioDoc/tree/master/ActivityLifeCycle)
