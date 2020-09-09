@@ -29,3 +29,27 @@ public static class ExampleFragment extends Fragment {
 ```
 *container* paremeter v metóde je parent v ktorom je fragment layout vložený. <br>
 *savedInstanceState* parameter je Bundle ktorý poskytuje dáta o predchádzajúcom state-u fragmentu. <br>
+
+**Zobrazovanie fragmentu v xml**: <br>
+Pre zobrazenie je potrebné v xml pridať tag *android:name*.
+```xml
+<fragment
+        android:id="@+id/fragment"
+        android:name="com.example.fragment.ExampleFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+```
+**Zobrazovanie fragmentu programatically**: <br>
+Je potrebné si vytvoriť containter, napr. *FrameLayout* v ktorom bude fragment zobrazený.
+```java
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+
+        Fragment fragment = new ExampleFragment();
+        
+        //nahradí to čo je v fragmentContaintery
+        transaction.replace(R.id.act2_frag2, fragment);
+
+        // uskotoční prechod
+        transaction.commit();
+```
